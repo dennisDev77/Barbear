@@ -1,0 +1,17 @@
+ /* Icone do whatsapp */
+.whats{
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    z-index: 2024;
+    transition:.3s
+}
+.whats:hover{
+   transform: translateY(-10px);
+}
+
+@media (max-width:33rem){
+    .whats{
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.select{
+    background-color: #1d212b;
+    border: none;
+    border-radius: .3rem;
+    padding: .8rem .5rem;
+    color: #ffffff;
+    transition: .6s;
+    font-size: 1rem;
+    width: 100%;
+}

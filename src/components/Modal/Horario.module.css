@@ -1,0 +1,14 @@
+.horario{
+background-color:#080B16;
+padding: .5rem 1.2rem;
+border-radius: .2rem;
+cursor: pointer;
+color:#E6E6E6;
+box-shadow: 0 0 0 1px #E6E6E6;
+margin-inline:.3rem;
+transition: .3s;
+}
+.horario:hover,
+.horario:focus{
+    background-color:#f0b25b9d;
+}

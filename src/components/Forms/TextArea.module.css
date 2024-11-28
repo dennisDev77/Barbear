@@ -1,0 +1,18 @@
+.textArea{
+    background-color: #1d212b;
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem .5rem;
+    color: #a57c43;
+    transition: .3s;
+    font-size: .9rem;
+}
+.textArea:focus,
+.textArea:hover{
+    outline: none;
+    box-shadow: 0 0 0 2px #F0B35B, 0 0 0 2px #fb1;
+    background:transparent;
+}
+.textArea::placeholder{
+    color: #a57c43;
+}

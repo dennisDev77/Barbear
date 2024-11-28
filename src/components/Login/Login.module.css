@@ -1,0 +1,14 @@
+.bgLogin{
+    background:linear-gradient(rgba(8,11,22, 1), rgba(13,18,30, .9), rgba(13,18,30, 1)), url('../../Assets/sobre1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height:100vh;
+}
+.forms{
+   width:25rem;
+}

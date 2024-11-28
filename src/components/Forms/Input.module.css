@@ -1,0 +1,22 @@
+input{
+    background-color: #1d212b;
+    border: none;
+    border-radius: .3rem;
+    padding: .8rem .5rem;
+    color: #ffffff;
+    transition: .6s;
+    font-size: 1rem;
+}
+input:focus,
+input:hover{
+    outline: none;
+    box-shadow: 0 0 0 2px #F0B35B, 0 0 0 2px #fb1;
+    background:transparent;
+}
+input::placeholder{
+    color: #e6e2e27e;
+}
+.erro{
+    margin-top: .2rem;
+    color: rgb(248, 51, 51);
+}

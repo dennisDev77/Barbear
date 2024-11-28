@@ -1,0 +1,80 @@
+.container{
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+.nossaEquipe{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+
+}
+.equipeText{
+    text-align: center;
+}
+
+
+.nossaEquipe .equipe{
+    box-shadow: 0 0 1px #E6E6E6;
+    border-top-left-radius: .5;
+    border-top-right-radius: .5;
+}
+.nossaEquipe .equipe img{
+    height: 20rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.nossaEquipe .equipe .img1, 
+.nossaEquipe .equipe .img2,
+.nossaEquipe .equipe .img3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.equipe .text{
+   background-color:#080B16;
+   color: #E6E6E6;
+   text-align: center;
+}
+.equipe .nome{
+    padding-top: .5rem;
+    color: #F0B35B;
+    font-weight: 400;
+    text-align: center;
+}
+.equipe .text .sociais{
+   padding-top: .3rem;
+}
+.equipe .text .sociais a{
+   padding-inline: .3rem;
+   font-size: 1.5rem;
+   transition: 1s;
+}
+.equipe .text .sociais a:hover{
+   transform: scale(1.2);
+}
+
+
+@media (max-width:49rem){
+  .container{
+    padding-top: 4rem;
+  }  
+
+}
+@media (max-width:32rem){
+    .nossaEquipe{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+    }
+    .nossaEquipe .equipe img{
+        width:67rem;
+    }
+}

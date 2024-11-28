@@ -1,0 +1,140 @@
+
+.navBar{
+    position: sticky;
+    top: 0;
+    background-color: #080B16;
+    padding: .3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    z-index: 10000;
+}
+.navBar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0B35B;
+    font-weight:bolder;
+    font-size: 2rem;
+}
+
+
+.navBar .menus{
+ color: #ffffff;
+    
+}
+.navBar .menus a{
+   padding:0 .5rem;
+   font-size: 1rem;
+   font-weight:200;
+   transition: .3s;
+    
+}
+.navBar .menus a:hover{
+   color: #E6E6E6;
+    
+}
+.navBar .decoration,
+.navBar .decoration:hover,
+.navBar .decoration:focus{
+   border: none;
+   outline:none;
+}
+
+.menuMobile .body{
+    padding: 5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 2rem;
+    font-size: 1.3rem;
+} 
+
+.menuMobile .body a{
+ margin-bottom: .4rem;
+ padding-bottom: .1rem;
+ transition: .3s;
+} 
+.menuMobile .body a:hover,
+.menuMobile .body a:focus{
+ color: #E6E6E6;
+ transform: scale(1.05);
+ border-bottom: 4px solid #F0B35B;
+ border-radius: .2rem;
+} 
+.menuMobile{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#080B16;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top:70px;
+    right:0;
+    transform: translateY(-40px);
+    opacity: 0;
+    overflow-x: hidden;
+    pointer-events: none;
+    transition: .6s;
+    animation: animeMobile .4s forwards;
+}
+@keyframes animeMobile {
+    to{
+        transform: initial;
+    }
+}
+
+
+.btnMobileActive{
+    transition: .6s;
+    border: none;
+    opacity: 1;
+    z-index: 2023;
+    pointer-events: initial;
+    transform: initial;
+}
+/* --------------  Versao Mobile ----------- */
+.btnMobile .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #F0B35B;
+    border-radius: .3rem;
+    cursor: pointer; 
+}
+
+.btnMobile .btn::after{
+    content: ''; 
+    display: block;
+    width: 1.2rem;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #F0B35B;
+    box-shadow: 0 6px #F0B35B, 0 -6px #F0B35B;
+    transition: .3s;
+}
+
+.btnMobile .btn:focus,
+.btnMobile .btn:hover{
+    outline: none;
+    box-shadow: 0 0 0 3px #dda95f;   
+}
+.btnMobile .btn:focus,
+.btnMobile .btn:hover,
+.btnMobileActive{
+    outline: none; 
+}
+.btnMobile .btnMobileActive::after{
+    transform: rotate(90deg);
+    width: 5px;
+    height: 5px;
+    box-shadow: 0 8px #F0B35B, 0 -8px #F0B35B;
+}

@@ -1,0 +1,41 @@
+
+.wrapper{
+ display:flex;
+ flex-flow: column wrap;
+ box-shadow:none;
+ border-radius: .3rem;
+ margin-top: 5rem;
+ padding-inline: 2rem;
+ box-shadow: 0 0 5px rgba(245, 240, 240, .8);
+}
+
+.title{
+    text-align: center;
+    padding-top: 2rem;
+} 
+.form{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  
+}
+.button{
+   display: flex;
+   align-items: center;
+   flex-flow: column wrap;
+}
+
+
+.linkCriar{
+    padding-top: 1rem;
+    text-align:center;
+}
+.linkCriar a::after{
+   display: block;
+   content: '';
+   width: 100%;
+   height: 1px;
+   background-color: #ffffffe1;
+}

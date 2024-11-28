@@ -1,0 +1,65 @@
+.overlay{
+    background-color: #070a14b0;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-40px);
+    animation: overlayAnime .6s normal forwards steps(40);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes overlayAnime {
+ to{
+    transform: initial;
+    opacity: 1;
+    visibility: visible;
+ }    
+}
+.overlay .wrapper{
+    background-color:#070A14;
+    padding: 2rem;
+    width: 35rem;
+    border-radius: .5rem;
+    position: relative;
+    transform: translateY(-40px);
+    animation: overlayAnime 1s normal forwards steps(40);
+}
+.header .btnClose{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #E6E6E6;
+}
+.header .h2{
+text-align: center;
+padding-top:1rem;
+padding-bottom:1rem;
+}
+.form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.labelSelect{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    width: 100%;
+    color: #E6E6E6;
+}
+.horario{
+    display: flex;
+    flex-flow:row wrap;
+    padding-top:.5rem;
+    padding-bottom:1rem;
+
+}

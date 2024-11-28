@@ -1,0 +1,152 @@
+.section{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(8,11,22, 1), rgba(13,18,30, .9), rgba(13,18,30, 1)), url('../Assets/bg3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    position: relative;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.divMain{
+    padding-top: 8rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+ @keyframes words {
+        from{
+            width: 0;
+        }
+        to{
+            width: 100%;
+        }
+}
+/* .divMain .animation{
+    white-space: nowrap;
+   overflow: hidden;
+    animation: cursorLine .6s  steps(50) infinite normal, words 8s steps(50) infinite both; 
+} */
+
+@keyframes cursorLine {
+
+    from{
+        border-right-color: #F0B35B;
+    }
+    to{
+        border-right-color:transparent ;
+    }  
+}  
+
+.divMain h2{
+    font-weight:900;
+    text-transform: uppercase;
+    font-size: 2.7rem;
+
+}
+.divMain .span{
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.divMain .span::after{
+   content: '';
+   display:inline-block;
+   background-color: #F0B35B;
+   width:10px;
+   height: 12px;
+   margin-left: 5px;
+   border-radius: .1rem;
+}
+.divMain p{
+    line-height:.5;
+    font-size: 1.07rem;
+    font-weight: 100;
+}
+
+@keyframes scaleUp {
+    to{
+        opacity: 0;
+        transform: scale(1);
+        
+    }
+    from{
+        opacity: 1;
+        transform: initial;
+    }
+}
+
+/* .divMain .paragrafo{
+    border: 1px solid red;
+} */
+.divMain .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+.divMain .button2{
+   border: 1px solid #F0B35B;
+   text-align: center;
+   color:#F0B35B ;
+   background: transparent;
+   outline: none;
+   padding: .5rem 1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button, .button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divMain .button2:hover,
+.divMain .button2:focus{
+    transform: scale(1.05);
+    background: #F0B35B;
+    color:#080B16;
+}
+/* --------------------- Versao Mobile --------------------- */
+@media (max-width:39rem){
+  
+    .divMain{
+        padding-top: 8rem;
+    }
+   
+}
+
+@media (max-width:49rem){
+
+    .divMain h2{
+       
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+    .divMain .span{
+        font-weight:bold;
+        text-transform: uppercase;
+        font-size: 1rem;
+      
+    }
+    .divMain p{
+        line-height:1;
+        font-weight: 100;
+    }
+    .divMain .buttons{
+        flex-flow: column wrap;
+        gap: 1rem;
+    }
+    .divMain button,
+    .divMain .button2{
+        padding: 1rem 1rem;
+    }
+   
+  }

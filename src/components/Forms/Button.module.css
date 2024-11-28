@@ -1,0 +1,20 @@
+.button{
+color:#080B16;
+padding: .5rem 1.2rem;
+border-radius: .2rem;
+cursor: pointer;
+transition: .4s;
+border: none;
+}
+.button:hover,
+.button:focus{
+   transform: scale(1.01);
+   box-shadow: 0 0 0 2px #F0B35B;
+   color:#F0B35B ;
+   background: transparent;
+   outline: none;
+}
+.button:disabled{
+   opacity: .5;
+   cursor: wait;
+}
